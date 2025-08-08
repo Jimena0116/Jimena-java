@@ -1,0 +1,251 @@
+Subject: [PATCH] Initial commit
+---
+Index: .gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+--- /dev/null	(revision 68e87596b776318c31c993a70053f57ae40a8154)
++++ b/.gitignore	(revision 68e87596b776318c31c993a70053f57ae40a8154)
+@@ -0,0 +1,38 @@
++target/
++!.mvn/wrapper/maven-wrapper.jar
++!**/src/main/**/target/
++!**/src/test/**/target/
++
++### IntelliJ IDEA ###
++.idea/modules.xml
++.idea/jarRepositories.xml
++.idea/compiler.xml
++.idea/libraries/
++*.iws
++*.iml
++*.ipr
++
++### Eclipse ###
++.apt_generated
++.classpath
++.factorypath
++.project
++.settings
++.springBeans
++.sts4-cache
++
++### NetBeans ###
++/nbproject/private/
++/nbbuild/
++/dist/
++/nbdist/
++/.nb-gradle/
++build/
++!**/src/main/**/build/
++!**/src/test/**/build/
++
++### VS Code ###
++.vscode/
++
++### Mac OS ###
++.DS_Store
+\ No newline at end of file
+Index: .idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(revision 68e87596b776318c31c993a70053f57ae40a8154)
++++ b/.idea/.gitignore	(revision 68e87596b776318c31c993a70053f57ae40a8154)
+@@ -0,0 +1,10 @@
++# Default ignored files
++/shelf/
++/workspace.xml
++# Editor-based HTTP Client requests
++/httpRequests/
++# Environment-dependent path to Maven home directory
++/mavenHomeManager.xml
++# Datasource local storage ignored files
++/dataSources/
++/dataSources.local.xml
+Index: .idea/encodings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/encodings.xml b/.idea/encodings.xml
+new file mode 100644
+--- /dev/null	(revision 68e87596b776318c31c993a70053f57ae40a8154)
++++ b/.idea/encodings.xml	(revision 68e87596b776318c31c993a70053f57ae40a8154)
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="Encoding">
++    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
++    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(revision 68e87596b776318c31c993a70053f57ae40a8154)
++++ b/.idea/misc.xml	(revision 68e87596b776318c31c993a70053f57ae40a8154)
+@@ -0,0 +1,14 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ExternalStorageConfigurationManager" enabled="true" />
++  <component name="MavenProjectsManager">
++    <option name="originalFiles">
++      <list>
++        <option value="$PROJECT_DIR$/pom.xml" />
++      </list>
++    </option>
++  </component>
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_24" default="true" project-jdk-name="corretto-24" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(revision 68e87596b776318c31c993a70053f57ae40a8154)
++++ b/.idea/vcs.xml	(revision 68e87596b776318c31c993a70053f57ae40a8154)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pom.xml b/pom.xml
+new file mode 100644
+--- /dev/null	(revision 68e87596b776318c31c993a70053f57ae40a8154)
++++ b/pom.xml	(revision 68e87596b776318c31c993a70053f57ae40a8154)
+@@ -0,0 +1,17 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project xmlns="http://maven.apache.org/POM/4.0.0"
++         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
++    <modelVersion>4.0.0</modelVersion>
++
++    <groupId>vallegrtande.edu.pe</groupId>
++    <artifactId>POO-Vehiculos</artifactId>
++    <version>1.0-SNAPSHOT</version>
++
++    <properties>
++        <maven.compiler.source>24</maven.compiler.source>
++        <maven.compiler.target>24</maven.compiler.target>
++        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
++    </properties>
++
++</project>
+\ No newline at end of file
+Index: src/main/java/Auto.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Auto.java b/src/main/java/Auto.java
+new file mode 100644
+--- /dev/null	(revision 68e87596b776318c31c993a70053f57ae40a8154)
++++ b/src/main/java/Auto.java	(revision 68e87596b776318c31c993a70053f57ae40a8154)
+@@ -0,0 +1,10 @@
++public class Auto extends Vehiculo {
++    public Auto(String marca, String modelo) {
++        super(marca, modelo);
++    }
++
++    @Override
++    public void encender() {
++        System.out.println("El auto " + getMarca() + " " + getModelo() + " está encendido y listo para rodar.");
++    }
++}
+\ No newline at end of file
+Index: src/main/java/Motocicleta.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Motocicleta.java b/src/main/java/Motocicleta.java
+new file mode 100644
+--- /dev/null	(revision 68e87596b776318c31c993a70053f57ae40a8154)
++++ b/src/main/java/Motocicleta.java	(revision 68e87596b776318c31c993a70053f57ae40a8154)
+@@ -0,0 +1,10 @@
++public class Motocicleta extends Vehiculo {
++    public Motocicleta(String marca, String modelo) {
++        super(marca, modelo);
++    }
++
++    @Override
++    public void encender() {
++        System.out.println("La motocicleta " + getMarca() + " " + getModelo() + " está encendida y lista para acelerar.");
++    }
++}
+\ No newline at end of file
+Index: src/main/java/Vehiculo.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Vehiculo.java b/src/main/java/Vehiculo.java
+new file mode 100644
+--- /dev/null	(revision 68e87596b776318c31c993a70053f57ae40a8154)
++++ b/src/main/java/Vehiculo.java	(revision 68e87596b776318c31c993a70053f57ae40a8154)
+@@ -0,0 +1,19 @@
++public class Vehiculo {
++    private String marca;
++    private String modelo;
++
++    public Vehiculo(String marca, String modelo) {
++        this.marca = marca;
++        this.modelo = modelo;
++    }
++
++    public String getMarca() { return marca; }
++    public void setMarca(String marca) { this.marca = marca; }
++
++    public String getModelo() { return modelo; }
++    public void setModelo(String modelo) { this.modelo = modelo; }
++
++    public void encender() {
++        System.out.println("Encendiendo vehículo genérico...");
++    }
++}
+\ No newline at end of file
+Index: src/main/java/vallegrtande/edu/pe/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/vallegrtande/edu/pe/Main.java b/src/main/java/vallegrtande/edu/pe/Main.java
+new file mode 100644
+--- /dev/null	(revision 68e87596b776318c31c993a70053f57ae40a8154)
++++ b/src/main/java/vallegrtande/edu/pe/Main.java	(revision 68e87596b776318c31c993a70053f57ae40a8154)
+@@ -0,0 +1,9 @@
++public class Main {
++    public static void main(String[] args) {
++        Vehiculo miAuto = new Auto("Toyota", "Corolla");
++        Vehiculo miMoto = new Motocicleta("Yamaha", "R3");
++
++        miAuto.encender();
++        miMoto.encender();
++    }
++}
+\ No newline at end of file
